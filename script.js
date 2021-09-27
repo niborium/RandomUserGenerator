@@ -8,7 +8,7 @@ xhr.onload = function() {
         var myStuff = JSON.parse(xhr.responseText);
         console.log(myStuff);
         document.getElementById("name").textContent = "Namn: " + myStuff.results[0].name.first + " " + myStuff.results[0].name.last
-        document.getElementById("phone").textContent = "Telfonnummer: " + myStuff.results[0].phone
+        document.getElementById("phone").textContent = "Telefonnummer: " + myStuff.results[0].phone
         document.getElementById("dob").textContent =  "Ålder: " + myStuff.results[0].dob.age + " -  Datum: (" + myStuff.results[0].dob.date + ")";
         document.getElementById("email").textContent = "Email: " + myStuff.results[0].email
         document.getElementById("gender").textContent = "Kön: " + myStuff.results[0].gender
@@ -28,7 +28,7 @@ fetch('https://randomuser.me/api/')
 .then(res => res.json())
 .then(res => {
     document.getElementById("name2").textContent = "Namn: " + res.results[0].name.first + " " + res.results[0].name.last
-    document.getElementById("phone2").textContent = "Telfonnummer: " + res.results[0].phone
+    document.getElementById("phone2").textContent = "Telefonnummer: " + res.results[0].phone
     document.getElementById("dob2").textContent =  "Ålder: " + res.results[0].dob.age + " -  Datum: (" + res.results[0].dob.date + ")";
     document.getElementById("email2").textContent = "Email: " + res.results[0].email
     document.getElementById("gender2").textContent = "Kön: " + res.results[0].gender
