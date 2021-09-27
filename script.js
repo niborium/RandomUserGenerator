@@ -37,7 +37,5 @@ fetch('https://randomuser.me/api/')
     document.getElementById("bostadsort2").textContent = "Bostadsort: " + res.results[0].location.city
     document.getElementById("land2").textContent = "Land: " + res.results[0].location.country
     document.getElementById("postkod2").textContent = "Postkod: " + res.results[0].location.postcode
-
     document.getElementById("street2").textContent = "Adress: " + res.results[0].location.street.number + " " + res.results[0].location.street.name
-
 });
