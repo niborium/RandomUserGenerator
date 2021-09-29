@@ -6,7 +6,6 @@ xhr.open("GET", 'https://randomuser.me/api/', true);
 xhr.onload = function() {
     if (xhr.status === 200) {
         var myStuff = JSON.parse(xhr.responseText);
-        console.log(myStuff);
         document.getElementById("name").textContent = "Namn: " + myStuff.results[0].name.first + " " + myStuff.results[0].name.last
         document.getElementById("phone").textContent = "Telefonnummer: " + myStuff.results[0].phone
         document.getElementById("dob").textContent =  "Ålder: " + myStuff.results[0].dob.age + " -  Datum: (" + myStuff.results[0].dob.date + ")";
